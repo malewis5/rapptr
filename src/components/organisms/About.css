@@ -1,0 +1,40 @@
+.About {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.About-title {
+  color: #2fcbfc;
+  width: 50%;
+  text-align: end;
+}
+
+.About-title h2 {
+  padding-right: 160px;
+}
+
+.About-content {
+  width: 50%;
+}
+
+@media screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .About {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .About-title h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .About-content {
+    text-align: justify;
+    width: 80vw;
+  }
+}
