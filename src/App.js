@@ -2,8 +2,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // Custom Components
-import { Login } from "./components/pages/Login";
-import { Landing } from "./components/pages/Landing";
+import { Login } from "./components/pages/Login/Login";
+import { Landing } from "./components/pages/Landing/Landing";
 
 function App() {
   return (

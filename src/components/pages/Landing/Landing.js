@@ -1,10 +1,10 @@
 import "./Landing.css";
 
 // Custom Components
-import { Hero } from "../organisms/Hero/Hero";
-import { About } from "../organisms/About/About";
-import { Apps } from "../organisms/Apps/Apps";
-import { Newsletter } from "../organisms/NewsLetter/Newsletter";
+import { Hero } from "../../organisms/Hero/Hero";
+import { About } from "../../organisms/About/About";
+import { Apps } from "../../organisms/Apps/Apps";
+import { Newsletter } from "../../organisms/NewsLetter/Newsletter";
 
 export const Landing = () => {
   return (
