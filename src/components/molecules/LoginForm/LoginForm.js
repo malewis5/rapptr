@@ -13,6 +13,12 @@ import { Button } from "../../atoms/Button/Button";
 
 export const LoginForm = () => {
   const [newUser, setNewUser] = useState(true);
+  const [email, setEmail] = useState("test@rapptrlabs.com");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleClick = () => {};
+
   return (
     <div className="Login-form">
       <img className="bg" src={background} alt="background" />
@@ -34,18 +40,33 @@ export const LoginForm = () => {
       {newUser ? (
         <div className="input-container">
           <img src={ic_username} alt="username icon" />
-          <Field type="text" placeholder="Username" />
+          <Field
+            type="text"
+            placeholder="Username"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+          />
         </div>
       ) : null}
       <div className="input-container">
         <img src={ic_email} alt="email icon" />
-        <Field type="text" placeholder="Email" />
+        <Field
+          type="text"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </div>
       <div className="input-container">
         <img src={ic_password} alt="password icon" />
-        <Field type="text" placeholder="Password" />
+        <Field
+          type="text"
+          placeholder="Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
       </div>
-      <Button action={newUser ? "SIGN UP" : "LOGIN"} />{" "}
+      <Button action={newUser ? "SIGN UP" : "LOGIN"} onClick={handleClick} />{" "}
     </div>
   );
 };
