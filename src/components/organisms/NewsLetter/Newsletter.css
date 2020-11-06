@@ -8,3 +8,11 @@
   color: #2fcbfc;
   margin-bottom: 45px;
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
+  .Newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
