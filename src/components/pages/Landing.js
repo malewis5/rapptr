@@ -4,6 +4,7 @@ import "./Landing.css";
 import { Hero } from "../organisms/Hero/Hero";
 import { About } from "../organisms/About/About";
 import { Apps } from "../organisms/Apps/Apps";
+import { Newsletter } from "../organisms/NewsLetter/Newsletter";
 
 export const Landing = () => {
   return (
@@ -11,6 +12,7 @@ export const Landing = () => {
       <Hero />
       <About />
       <Apps />
+      <Newsletter />
     </div>
   );
 };

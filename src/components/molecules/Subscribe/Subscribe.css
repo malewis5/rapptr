@@ -1,0 +1,23 @@
+.subscribe {
+  display: inline-block;
+}
+
+.subscribe .button {
+  background-color: #2f2e2e;
+  width: 165px;
+  height: 49px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: left;
+}
+
+.subscribe input {
+  height: 49px;
+  width: 276px;
+  background-color: transparent;
+  padding-left: 20px;
+  border: 1px solid #e8e8e8;
+  float: left;
+}

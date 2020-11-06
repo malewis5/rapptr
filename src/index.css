@@ -43,4 +43,15 @@ p {
   font-size: 0.875rem;
   color: #fff;
   font-weight: 700;
+  cursor: pointer;
+  position: relative;
+}
+
+.button:hover {
+  opacity: 90%;
+}
+
+.button:active {
+  top: 1px;
+  opacity: 100%;
 }
