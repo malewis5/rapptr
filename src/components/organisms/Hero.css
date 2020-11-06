@@ -1,0 +1,49 @@
+.Hero-container {
+  background: url("../../assets/gpc_hero_image@2x.png") center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hero-logo {
+  text-align: center;
+  max-width: 80vw;
+}
+
+.Hero-logo img {
+  max-width: 100%;
+  margin-top: 230px;
+  margin-bottom: 32px;
+}
+
+.Hero-tagline {
+  margin-bottom: 230px;
+  text-transform: capitalize;
+}
+
+.Hero-login Link {
+  color: white;
+  align-self: none;
+}
+
+.Hero-login a {
+  position: absolute;
+  right: 80px;
+  top: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+.Hero-login a:hover {
+  text-decoration: underline;
+}
+
+.Hero-login a:active {
+  opacity: 90%;
+  top: 33px;
+}
