@@ -13,6 +13,9 @@ export const Landing = () => {
       <About />
       <Apps />
       <Newsletter />
+      <footer>
+        <p>Footer</p>
+      </footer>
     </div>
   );
 };
