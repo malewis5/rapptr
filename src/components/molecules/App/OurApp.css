@@ -1,0 +1,16 @@
+.OurApp img {
+  max-height: 300px;
+}
+
+.OurApp h5 {
+  text-align: center;
+  padding-top: 24px;
+  text-decoration: none;
+  color: white;
+  transition: font-size 0.5s ease;
+}
+
+.OurApp:hover h5 {
+  text-decoration: underline;
+  font-size: 1.375rem;
+}
