@@ -2,7 +2,7 @@ import "./Hero.css";
 import { Link } from "react-router-dom";
 
 // Assets
-import logo from "../../assets/logo.png";
+import logo from "../../../assets/logo.png";
 
 export const Hero = () => {
   return (

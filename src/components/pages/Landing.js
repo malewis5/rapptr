@@ -1,8 +1,8 @@
 import "./Landing.css";
 
 // Custom Components
-import { Hero } from "../organisms/Hero";
-import { About } from "../organisms/About";
+import { Hero } from "../organisms/Hero/Hero";
+import { About } from "../organisms/About/About";
 
 export const Landing = () => {
   return (
