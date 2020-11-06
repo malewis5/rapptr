@@ -1,0 +1,25 @@
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Login {
+}
+
+.Login-logo {
+  position: absolute;
+  top: 32px;
+  left: 80px;
+  color: black;
+  max-width: 250px;
+}
+
+.Login-form {
+  margin: 225px auto 236px auto;
+}

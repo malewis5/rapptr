@@ -10,7 +10,7 @@ export const Subscribe = () => {
   };
   return (
     <div className="subscribe">
-      <Field placeholder="Your Email" />
+      <Field placeholder="Your Email" type="text" />
       <Button onClick={handleSubmit} action="SUBSCRIBE" />
     </div>
   );
