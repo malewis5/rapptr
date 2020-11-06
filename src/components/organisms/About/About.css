@@ -2,8 +2,6 @@
   margin-top: 80px;
   margin-bottom: 80px;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
 }
 
 .About-title {
@@ -20,21 +18,33 @@
   width: 50%;
 }
 
+.About-content p {
+  padding-right: 160px;
+}
+
 @media screen and (min-device-width: 375px) and (max-device-width: 812px) {
   .About {
     flex-direction: column;
-    justify-content: center;
+    margin-top: 60px;
     align-items: center;
   }
 
-  .About-title h2 {
+  .About-title {
+    width: 100%;
     margin-bottom: 40px;
     text-align: center;
-    width: 100%;
+  }
+
+  .About-title h2 {
+    padding: 0;
   }
 
   .About-content {
     text-align: justify;
     width: 80vw;
+  }
+
+  .About-content p {
+    padding-right: 0;
   }
 }
