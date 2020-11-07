@@ -72,4 +72,8 @@
   .subscribe {
     margin-bottom: -30px;
   }
+
+  #success {
+    flex-direction: column;
+  }
 }
