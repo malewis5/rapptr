@@ -52,10 +52,10 @@ p {
 }
 
 .button:hover {
-  opacity: 90%;
+  opacity: 0.9;
 }
 
 .button:active {
   top: 1px;
-  opacity: 100%;
+  opacity: 1;
 }
