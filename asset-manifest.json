@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/rapptr/static/css/main.97be4251.chunk.css",
+    "main.js": "/rapptr/static/js/main.a510a7fd.chunk.js",
+    "main.js.map": "/rapptr/static/js/main.a510a7fd.chunk.js.map",
+    "runtime-main.js": "/rapptr/static/js/runtime-main.10566484.js",
+    "runtime-main.js.map": "/rapptr/static/js/runtime-main.10566484.js.map",
+    "static/js/2.26b5d672.chunk.js": "/rapptr/static/js/2.26b5d672.chunk.js",
+    "static/js/2.26b5d672.chunk.js.map": "/rapptr/static/js/2.26b5d672.chunk.js.map",
+    "static/js/3.6c49d0bf.chunk.js": "/rapptr/static/js/3.6c49d0bf.chunk.js",
+    "static/js/3.6c49d0bf.chunk.js.map": "/rapptr/static/js/3.6c49d0bf.chunk.js.map",
+    "index.html": "/rapptr/index.html",
+    "static/css/main.97be4251.chunk.css.map": "/rapptr/static/css/main.97be4251.chunk.css.map",
+    "static/js/2.26b5d672.chunk.js.LICENSE.txt": "/rapptr/static/js/2.26b5d672.chunk.js.LICENSE.txt",
+    "static/media/Hero.css": "/rapptr/static/media/gpc_hero_image@2x.fd49cefe.png",
+    "static/media/gpc_loginBg@2x.75a4458c.png": "/rapptr/static/media/gpc_loginBg@2x.75a4458c.png",
+    "static/media/logo_conair@2x.9e03d42c.png": "/rapptr/static/media/logo_conair@2x.9e03d42c.png",
+    "static/media/logo_goTenna@2x.64d4512d.png": "/rapptr/static/media/logo_goTenna@2x.64d4512d.png",
+    "static/media/logo_movo@2x.b5279657.png": "/rapptr/static/media/logo_movo@2x.b5279657.png",
+    "static/media/logo_tappingSolution@2x.0daac0a4.png": "/rapptr/static/media/logo_tappingSolution@2x.0daac0a4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10566484.js",
+    "static/js/2.26b5d672.chunk.js",
+    "static/css/main.97be4251.chunk.css",
+    "static/js/main.a510a7fd.chunk.js"
+  ]
+}
