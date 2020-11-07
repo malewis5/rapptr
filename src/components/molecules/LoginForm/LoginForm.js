@@ -16,8 +16,17 @@ export const LoginForm = () => {
   const [email, setEmail] = useState("test@rapptrlabs.com");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleClick = () => {};
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      setUsername("");
+      setEmail("test@rapptrlabs.com");
+      setPassword("");
+    }, 1000);
+  };
 
   return (
     <div className="Login-form">
@@ -66,7 +75,10 @@ export const LoginForm = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
       </div>
-      <Button action={newUser ? "SIGN UP" : "LOGIN"} onClick={handleClick} />{" "}
+      <Button
+        action={loading ? "Loading..." : newUser ? "SIGN UP" : "LOGIN"}
+        onClick={handleClick}
+      />{" "}
     </div>
   );
 };
