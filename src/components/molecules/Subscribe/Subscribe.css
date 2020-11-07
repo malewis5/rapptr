@@ -27,7 +27,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: green;
+  background-color: #2fcbfc;
   z-index: 3;
   animation-duration: 0.3s;
   animation-name: appear;
@@ -36,9 +36,12 @@
 #success span.check {
   padding-left: 10px;
   padding-right: 20px;
+  color: green;
 }
 #success span.sub-again {
   transition: color 0.3s;
+  float: right;
+  position: relative;
 }
 
 #success span.sub-again:hover {
@@ -51,7 +54,7 @@
     opacity: 0%;
   }
   to {
-    opactiy: 100%;
+    opacity: 100%;
   }
 }
 
