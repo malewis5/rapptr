@@ -59,18 +59,21 @@
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: portrait) {
-  .subscribe input {
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe input[type="text"] {
     float: none;
-    margin-bottom: 30px;
   }
 
   .subscribe .button {
     float: none;
-    width: 276px;
-    justify-self: center;
-  }
-  .subscribe {
-    margin-bottom: -30px;
+    width: 100%;
+    margin-top: 20px;
   }
 
   #success {
