@@ -7,6 +7,11 @@ export const Field = (props) => {
       placeholder={props.placeholder}
       value={props.value}
       onChange={props.onChange}
+      required={props.required}
     />
   );
+};
+
+Field.defaultProps = {
+  required: true,
 };

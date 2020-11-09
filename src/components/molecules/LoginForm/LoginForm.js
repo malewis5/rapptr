@@ -18,7 +18,7 @@ export const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleClick = () => {
+  const handleSubmit = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
@@ -45,40 +45,42 @@ export const LoginForm = () => {
           Login
         </h3>
       </div>
-      {/*Check status of user*/}
-      {newUser ? (
+
+      <form onSubmit={handleSubmit}>
+        {/*Check status of user*/}
+        {newUser ? (
+          <div className="input-container">
+            <img src={ic_username} alt="username icon" />
+            <Field
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+            />
+          </div>
+        ) : null}
         <div className="input-container">
-          <img src={ic_username} alt="username icon" />
+          <img src={ic_email} alt="email icon" />
           <Field
             type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-      ) : null}
-      <div className="input-container">
-        <img src={ic_email} alt="email icon" />
-        <Field
-          type="text"
-          placeholder="Email"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div className="input-container">
-        <img src={ic_password} alt="password icon" />
-        <Field
-          type="text"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <Button
-        action={loading ? "Loading..." : newUser ? "SIGN UP" : "LOGIN"}
-        onClick={handleClick}
-      />{" "}
+        <div className="input-container">
+          <img src={ic_password} alt="password icon" />
+          <Field
+            type="text"
+            placeholder="Password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <Button
+          action={loading ? "Loading..." : newUser ? "SIGN UP" : "LOGIN"}
+        />{" "}
+      </form>
     </div>
   );
 };

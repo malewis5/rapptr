@@ -3,7 +3,7 @@ import "./Button.css";
 export const Button = (props) => {
   return (
     <div className="button" onClick={props.onClick}>
-      {props.action}
+      <input value={props.action} type="submit" />
     </div>
   );
 };

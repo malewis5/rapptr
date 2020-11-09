@@ -9,7 +9,8 @@ export const Subscribe = () => {
   const [email, setEmail] = useState("test@rapptrlabs.com");
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
     setLoading(true);
     const formData = new FormData();
     formData.append("email", email);
@@ -56,16 +57,15 @@ export const Subscribe = () => {
           (Subscribe Again)
         </span>
       </div>
-      <Field
-        placeholder="Your Email"
-        type="text"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-      />
-      <Button
-        onClick={handleSubmit}
-        action={loading ? "LOADING..." : "SUBSCRIBE"}
-      />
+      <form onSubmit={handleSubmit}>
+        <Field
+          placeholder="Your Email"
+          type="text"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <Button action={loading ? "LOADING..." : "SUBSCRIBE"} />
+      </form>
     </div>
   );
 };

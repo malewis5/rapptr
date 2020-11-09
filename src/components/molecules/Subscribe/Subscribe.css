@@ -10,7 +10,7 @@
   float: left;
 }
 
-.subscribe input {
+.subscribe input[type="text"] {
   height: 49px;
   width: 276px;
   background-color: transparent;
