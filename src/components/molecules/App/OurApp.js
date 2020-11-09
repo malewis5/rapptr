@@ -2,11 +2,15 @@ import "./OurApp.css";
 
 export const App = (props) => {
   return (
-    <a href={props.link} target="_blank" rel="noreferrer">
-      <div className="OurApp">
+    <div className="OurApp">
+      <a href={props.link} target="_blank" rel="noreferrer">
         <img src={props.img} alt={props.alt} />
-        <h5>{props.name}</h5>
-      </div>
-    </a>
+      </a>
+      <h5>
+        <a href={props.link} target="_blank" rel="noreferrer">
+          {props.name}
+        </a>
+      </h5>
+    </div>
   );
 };
